@@ -303,7 +303,8 @@ CREATE TABLE IF NOT EXISTS stock_prices (
 );"
 ```
 
-![Tạo bảng MariaDB](images/07_create_table.png)
+<img width="1481" height="757" alt="image" src="https://github.com/user-attachments/assets/1e037a48-e918-48d5-a6e8-317ec0d0a162" />
+
 
 ### Bước 8 — Cấu hình Node-RED
 
@@ -316,7 +317,8 @@ Import flow gồm 7 node:
 Every 30s --> SSI API --> Parse & Check Alert --> Save MariaDB --> Debug
 --> Save InfluxDB
 --> Check Alert --> Telegram Alert
-![Node-RED flow](images/08_nodered_flow.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/0a6272af-ea8c-4e59-a679-310876b97f62" />
+
 
 Flow hoạt động:
 - Cứ 30 giây gọi API SSI lấy giá 5 mã: VCB, VIC, HPG, FPT, MBB
