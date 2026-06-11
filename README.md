@@ -344,13 +344,15 @@ from(bucket: "stockbucket")
   |> filter(fn: (r) => r._field == "price")
 ```
 
-![Grafana dashboard](images/09_grafana_dashboard.png)
+<img width="1456" height="818" alt="image" src="https://github.com/user-attachments/assets/9be66ca2-baed-4aa6-9e08-f02dedb42ed8" />
+
 
 ### Bước 10 — Kết quả website
 
 Website công khai tại **https://bt5.taphamdinhhoa.io.vn**:
 
-![Website chính](images/10_website_main.png)
+<img width="1456" height="818" alt="image" src="https://github.com/user-attachments/assets/40547709-ae21-4c42-8663-2fa96d0a61fc" />
+
 
 Tính năng:
 - Hiển thị giá cổ phiếu cập nhật mỗi 5 giây
@@ -387,15 +389,13 @@ docker compose down
 docker system prune -a -f
 ```
 
-![Xóa container](images/12_docker_prune.png)
-
 **Load lại từ file nén:**
 
 ```bash
 docker load -i ~/bt5_images.tar.gz
 ```
+<img width="1355" height="762" alt="image" src="https://github.com/user-attachments/assets/ba128ef4-eec0-444a-b307-8a5bbb6e6e61" />
 
-![Load lại image](images/13_docker_load.png)
 
 **Khởi động lại:**
 
