@@ -134,7 +134,7 @@ ssh dinhhoa@192.168.1.35
 lsb_release -a && docker --version && df -h /
 ```
 
-![SSH vào server](images/01_ssh_server.png)
+<img width="1477" height="760" alt="image" src="https://github.com/user-attachments/assets/c10b7183-25b6-4b33-9e93-3a0ebd63e6b2" />
 
 Kết quả: Ubuntu 24.04.4 LTS, Docker 29.4.0, còn 7GB dung lượng.
 
@@ -144,8 +144,8 @@ Kết quả: Ubuntu 24.04.4 LTS, Docker 29.4.0, còn 7GB dung lượng.
 mkdir -p ~/bt5/{nodered,flask,nginx/myweb,mariadb,influxdb,grafana}
 cd ~/bt5 && ls -la
 ```
+<img width="1482" height="762" alt="image" src="https://github.com/user-attachments/assets/b6823dec-4a45-461a-99bf-dbacd1e689c0" />
 
-![Cấu trúc thư mục](images/02_folder_structure.png)
 
 ### Bước 3 — Tạo Flask API (`flask/app.py`)
 
@@ -170,7 +170,8 @@ def get_latest():
     return jsonify({"status": "ok", "data": rows})
 ```
 
-![Flask app.py](images/03_flask_app.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e91c4738-dc12-492d-bc96-ad0476680477" />
+
 
 ### Bước 4 — Tạo `docker-compose.yml`
 
@@ -258,6 +259,10 @@ volumes:
   influxdb_data:
   grafana_data:
 ```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/9753152e-2001-4f73-964f-ef958c633810" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/61b09e4d-9471-479d-b997-73709ea1037c" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3ee55091-d2d7-47ae-9cbd-7b221dab198e" />
+
 
 ### Bước 5 — Khởi động toàn bộ hệ thống
 
@@ -267,7 +272,8 @@ docker compose up -d
 docker compose ps
 ```
 
-![7 container chạy thành công](images/05_docker_compose_up.png)
+<img width="1482" height="758" alt="image" src="https://github.com/user-attachments/assets/94d9869b-1f0f-4d7a-aadf-00d1dc22fb86" />
+
 
 Kết quả: 7/7 container Started.
 
@@ -281,7 +287,8 @@ Tạo tunnel `bt5` trên Cloudflare dashboard, thêm 3 route:
 | `bt5-nr.taphamdinhhoa.io.vn` | `http://bt5-nodered:1880` |
 | `bt5-grafana.taphamdinhhoa.io.vn` | `http://bt5-grafana:3000` |
 
-![Cloudflare Tunnel routes](images/06_cloudflare_routes.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4f89cc57-e201-4576-9bb2-b626918efd39" />
+
 
 ### Bước 7 — Tạo bảng MariaDB
 
