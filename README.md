@@ -363,7 +363,8 @@ Tính năng:
 
 Bot `@bt5alert_dinhhoa_bot` gửi cảnh báo vào group **Baitap5** (3 thành viên) khi phát hiện giá bất thường:
 
-![Telegram alert](images/11_telegram_alert.png)
+<img width="347" height="762" alt="image" src="https://github.com/user-attachments/assets/08d1ec6f-4377-47a3-9bd2-25a4be7bbd04" />
+
 
 Nội dung alert tường minh, có giá trị gây alert:
 > ⚠️ ALERT BT5
