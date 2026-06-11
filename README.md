@@ -312,6 +312,7 @@ Truy cập `https://bt5-nr.taphamdinhhoa.io.vn`, cài 3 node:
 - `node-red-node-mysql`
 - `node-red-contrib-influxdb`
 - `node-red-contrib-telegrambot`
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/8249242e-9981-4cb2-ba7e-28c5cf2cca26" />
 
 Import flow gồm 7 node:
 Every 30s --> SSI API --> Parse & Check Alert --> Save MariaDB --> Debug
@@ -404,7 +405,6 @@ docker load -i ~/bt5_images.tar.gz
 docker compose up -d
 docker ps -a
 ```
+<img width="1478" height="761" alt="image" src="https://github.com/user-attachments/assets/37343891-5b82-4bfc-94b1-f63d8041b273" />
 
-![Khởi động lại thành công](images/14_docker_restore.png)
 
-Kết quả: 7/7 container Started — hệ thống khôi phục hoàn toàn từ file nén.
